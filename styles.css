@@ -35,3 +35,19 @@ header {
 #header_content a {
     color: #ffffff;
 }
+
+#links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 18em;
+}
+
+#links a {
+    display: flex;
+    align-items: center;
+}
+
+a img {
+    margin-left: 0.2em;
+}
