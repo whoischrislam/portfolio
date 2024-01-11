@@ -25,6 +25,7 @@ header, footer {
     display: flex;
     justify-content: center;
     padding: 1.6em 0;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 header p, footer p {
@@ -111,6 +112,7 @@ section:nth-child(odd), header, footer {
 .focus-box {
     display: flex;
     flex-wrap: wrap;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 .focus-box p, ul {
@@ -155,6 +157,7 @@ section:nth-child(odd), header, footer {
     min-width: 14em;
     border-radius: 1em;
     margin: 0 0 1em 0;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 /* Media queries */
