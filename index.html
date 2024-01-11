@@ -1,56 +1,138 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&family=Sarabun&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <title>Christopher Lam | Product Designer & Front End Engineer</title>
         <link rel="stylesheet" href="styles.css" />
         <!-- Add js here later -->
     </head>
     <body>
         <header>
-            <div id="header_content">
-                <img src="https://placehold.co/50x50" alt="logo">
+            <div id="header-content">
+                <p>Christopher Lam</p>
                 <div id="links">
                     <a href="#about">About</a>
                     <a href="#portfolio">Portfolio</a>
-                    <a href="https://www.dropbox.com/s/0mwyg5wy4qyln6j/chris_lam_resume.pdf?dl=0" target="_blank">Resume<img src="https://placehold.co/12x12" alt="resume icon"></a>
-                    <a href="mailto:whoischrislam@gmail.com">Contact<img src="https://placehold.co/12x12" alt="mail icon"></a>
+                    <a href="https://www.dropbox.com/s/0mwyg5wy4qyln6j/chris_lam_resume.pdf?dl=0" target="_blank">Resume</a>
+                    <a href="mailto:whoischrislam@gmail.com"><span class="material-symbols-outlined">
+                        mail
+                        </span></a>
+                    <a href="https://github.com/whoischrislam" target="_blank"><i class="fa fa-github" style="font-size:24px"></i></a>
+                    <a href="https://www.linkedin.com/in/whoischrislam/" target="_blank"><i class="fa fa-linkedin" style="font-size:24px"></i></a>
                 </div>
             </div>
         </header>
-        <section>
-            <h1>Christopher Lam</h1>
-            <div class="classification">
-                <ul>
-                    <li><a href="https://www.designbychrislam.com/" target="_blank">See portfolio</a></li>
-                    <li><a href="https://www.linkedin.com/in/whoischrislam/" target="_blank">Connect on Linkedin</a></li>
-                    <li><a href="https://github.com/whoischrislam" target="_blank">Check out my GitHub</a></li>
-                </ul>
+        <section id="introduction">
+            <div class="section-content">
+                <h1>Product Designer & Front End Engineer</h1>
+                <p>I love to design and code websites, apps, and games!</p>
+                <p>My work has focused on foundational design, building on products from 0 to 1 at various startups and large companies.</p>
+                <img src="./images/companies.png" alt="Chris roller skating.">
             </div>
-            <!-- <div class="classification">
-                <img src="https://placehold.co/900x900" alt="Chris roller skating.">
+        </section>
+        <section id="about">
+            <div class="section-content">
+                <h1>👋 Hi, I'm Chris. Nice to meet you!</h1>
+                <p>I'm a product designer based in <del>sunny</del> foggy 🌁 San Francisco, CA.</p>
+                <p>Since 2012, I've designed and built digital products for startups and large companies. When I'm not designing or coding, I'm probably working on 🎮 game development, <a href="https://www.instagram.com/p/CuxQjRwvGKw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">🎲 playing board games</a>, <a href="https://www.instagram.com/reel/CuoaWzXgtSR/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">🕺 dancing</a>, or <a href="https://www.instagram.com/reel/C1DISysSMxZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">🛼 roller skating</a>.</p>
+                <div class="focus-box">
+                    <div class="focus-column">
+                        <h2>Design:</h2>
+                        <ul>
+                            <li>Prototyping</li>
+                            <li>UX Design</li>
+                            <li>UI Design</li>
+                            <li>UX Research</li>
+                            <li>Figma</li>
+                            <li>Adobe Creative Suite</li>
+                        </ul>
+                    </div>
+                    <div class="focus-column">
+                        <h2>Development:</h2>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>Git</li>
+                        </ul>
+                    </div>
+                </div>
+                    
             </div>
-            <div class="classification">
-                <img src="https://placehold.co/900x900" alt="Chris dancing.">
-            </div> -->
+        </section>
+        <section id="featured-work">
+            <div class="section-content">
+                <h1>Featured work</h1>
+                <div class="project">
+                    <h2>Iodine (acquired by GoodRx)</h2>
+                    <p>At Iodine, I joined as the sole designer. During my time at Iodine, we won the Webby award for best health website.</p>
+                    <img src="./images/iodine.png" alt="Iodine website">
+                </div>
+                <div class="project">
+                    <h2>Company name</h2>
+                    <p>Description of role and impact.</p>
+                    <img src="https://placehold.co/2950x950" alt="logo">
+                </div>
+                <div class="project">
+                    <h2>Company name</h2>
+                    <p>Description of role and impact.</p>
+                    <img src="https://placehold.co/2950x950" alt="logo">
+                </div>
+            </div>
+        </section>
+
+        <section id="side-projects">
+            <div class="section-content">
+                <h1>Side projects</h1>
+                <div class="project">
+                    <h2>Side project name</h2>
+                    <p>Description of project</p>
+                    <img src="https://placehold.co/2950x950" alt="logo">
+                </div>
+                <div class="project">
+                    <h2>Side project name</h2>
+                    <p>Description of project</p>
+                    <img src="https://placehold.co/2950x950" alt="logo">
+                </div>
+            </div>
+        </section>
+
+        <section id="other-work">
+            <div class="section-content">
+                <h1>Other work</h1>
+                <div class="project">
+                    <h2>Company name</h2>
+                    <p>Description of role and impact</p>
+                    <img src="https://placehold.co/2950x950" alt="logo">
+                </div>
+                <div class="project">
+                    <h2>Company name</h2>
+                    <p>Description of role and impact</p>
+                    <img src="https://placehold.co/2950x950" alt="logo">
+                </div>
+            </div>
         </section>
 
         <footer>
-            <div id="current">
-                <h2>What I'm currently up to</h2>
-
-                <ul>
-                    <li>🎲 Designing a board game</li>
-                    <li>💻 #100daysofcode</li>
-                    <li>🛼 Roller skating tricks</li>
-                    <li>🥊 Boxing</li>
-                </ul>
-            </div>
-            <div id="recent">
-                <h2>Recent projects</h2>
-                <ul>
-                    <li><a href="https://boardgameparty.netlify.app/" target="_blank">Board game profile (React)</a></li>
-                    <li><a href="https://travel-data.netlify.app/" target="_blank">Travel data rendered (React)</a></li>
-                </ul>
+            <div id="footer-content">
+                <p>© 2024 Christopher Lam</p>
+                <div id="links">
+                    <a href="#about">About</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="https://www.dropbox.com/s/0mwyg5wy4qyln6j/chris_lam_resume.pdf?dl=0" target="_blank">Resume</a>
+                    <a href="mailto:whoischrislam@gmail.com"><span class="material-symbols-outlined">
+                        mail
+                        </span></a>
+                    <a href="https://github.com/whoischrislam" target="_blank"><i class="fa fa-github" style="font-size:24px"></i></a>
+                    <a href="https://www.linkedin.com/in/whoischrislam/" target="_blank"><i class="fa fa-linkedin" style="font-size:24px"></i></a>
+                </div>
             </div>
         </footer>
     </body>
