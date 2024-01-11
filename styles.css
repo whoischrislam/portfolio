@@ -208,10 +208,4 @@ section:nth-child(odd), header, footer {
     section {
         padding: 2em 0;
     }
-
-    .focus-box {
-        width: 100vw;
-    }
-
-
 }
