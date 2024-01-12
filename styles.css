@@ -58,7 +58,7 @@ h1 {
 }
 
 h2 {
-    margin: 0 0 0 0;
+    margin: 0 0 0.4em 0;
 }
 
 p {
@@ -80,6 +80,7 @@ section img {
     height:100%;
     width:100%;
     object-fit: cover;
+    margin: 0 0 1em 0;
 }
 
 body {
@@ -108,6 +109,10 @@ section {
     width: 100vw;
     display: flex;
     justify-content: center;
+}
+
+section p:last-child {
+    margin: 0 0 0 0;
 }
 
 section:nth-child(even), header, footer {
@@ -162,7 +167,7 @@ section:nth-child(even), header, footer {
     padding:1em;
     min-width: 14em;
     border-radius: 1em;
-    margin: 0 0 1em 0;
+    margin: 0 0 2em 0;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
@@ -183,14 +188,15 @@ section:nth-child(even), header, footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
     color: #ffffff;
     background-color: #343C5B;
     z-index: 1000;
     height: 100vh;
     width: 100vw;
     animation: shrinkup 0.5s ease 1 forwards;
-    animation-delay: 2s;
+    animation-delay: 1.5s;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 @keyframes shrinkup {
@@ -218,11 +224,11 @@ section:nth-child(even), header, footer {
     animation-delay: 4.2s;
 }
 
-#animation-intro-p3 {
+#animation-companies {
     animation-delay: 4.4s;
 }
 
-#animation-companies {
+#animation-intro-p3 {
     animation-delay: 4.6s;
 }
 
@@ -231,15 +237,15 @@ section:nth-child(even), header, footer {
 }
 
 #featured-work {
-    animation-delay: 3s;
-}
-
-#side-projects {
-    animation-delay: 3.2s;
+    animation-delay: 5s;
 }
 
 #other-work {
-    animation-delay: 3.4s;
+    animation-delay: 5.2s;
+}
+
+#side-projects {
+    animation-delay: 5.4s;
 }
 
 /* Types of animations */
