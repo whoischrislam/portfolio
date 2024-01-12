@@ -110,7 +110,7 @@ section {
     justify-content: center;
 }
 
-section:nth-child(odd), header, footer {
+section:nth-child(even), header, footer {
     background-color: #343C5B;
     color: #ffffff;
 }
@@ -167,7 +167,7 @@ section:nth-child(odd), header, footer {
 }
 
 /* Animation */
-/* Starting animation */
+/* Animation classes */
 .animation-appear {
     opacity: 0;
     animation: appear 1s ease 1 forwards;
@@ -177,31 +177,57 @@ section:nth-child(odd), header, footer {
     animation: slideup 1s ease 1 forwards;
 }
 
+/* Animation for each section */
+/* Initial loading animation */
+#loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: #ffffff;
+    background-color: #343C5B;
+    z-index: 1000;
+    height: 100vh;
+    width: 100vw;
+    animation: shrinkup 0.5s ease 1 forwards;
+    animation-delay: 2s;
+}
+
+@keyframes shrinkup {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-100%);
+        display: none;
+    }    
+}
+
 #animation-intro {
     opacity: 0;
     animation: moveright 1s ease 1,
     appear 1s ease 1 forwards;
-    animation-delay: 1s;
+    animation-delay: 3s;
 }
 
 #animation-intro-p1 {
-    animation-delay: 2s;
+    animation-delay: 4s;
 }
 
 #animation-intro-p2 {
-    animation-delay: 2.2s;
+    animation-delay: 4.2s;
 }
 
 #animation-intro-p3 {
-    animation-delay: 2.4s;
+    animation-delay: 4.4s;
 }
 
 #animation-companies {
-    animation-delay: 2.6s;
+    animation-delay: 4.6s;
 }
 
 #skills {
-    animation-delay: 2.8s;
+    animation-delay: 4.8s;
 }
 
 #featured-work {
@@ -216,6 +242,7 @@ section:nth-child(odd), header, footer {
     animation-delay: 3.4s;
 }
 
+/* Types of animations */
 @keyframes moveright {
     0% {
         transform: translateX(-15%);
