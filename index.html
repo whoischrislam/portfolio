@@ -11,8 +11,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <title>Christopher Lam | Product Designer & Front End Engineer</title>
+        <script type="text/javascript" src="script.js"></script>
         <link rel="stylesheet" href="styles.css" />
-        <!-- Add js here later -->
     </head>
     <body>
         <header>
@@ -32,18 +32,18 @@
         </header>
         <section id="introduction">
             <div class="section-content">
-                <h1>👋 Hi, I'm Chris Lam. Nice to meet you!</h1>
-                <p>I'm a product designer & front end engineer based in <del>sunny</del> foggy 🌁 San Francisco, CA. I love to design and code websites, apps, and games!</p>
-                <p>Since 2012, from startups to large companies, I’ve shipped digital products from 0-to-1, established design systems, and helped companies build out their product teams and processes.</p>
-                <p>When I'm not designing or coding, you'll find me working on 🎮 game development, <a href="https://www.instagram.com/p/CuxQjRwvGKw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">🎲 playing board games</a>, <a href="https://www.instagram.com/reel/CuoaWzXgtSR/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">🕺 dancing</a>, or <a href="https://www.instagram.com/reel/C1DISysSMxZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">🛼 roller skating</a>.</p>
-                <img src="./images/companies.png" alt="Companies Chris has worked at.">
+                <h1 id="animation-intro">👋 Hi, I'm Chris Lam. Nice to meet you!</h1>
+                <p id="animation-intro-p1" class="animation-appear">I'm a product designer & front end engineer based in <del>sunny</del> foggy 🌁 San Francisco, CA. I love to design and code websites, apps, and games!</p>
+                <p id="animation-intro-p2" class="animation-appear">Since 2012, from startups to large companies, I’ve shipped digital products from 0-to-1, established design systems, and helped companies build out their product teams and processes.</p>
+                <p id="animation-intro-p3" class="animation-appear">When I'm not designing or coding, you'll find me working on 🎮 game development, <a href="https://www.instagram.com/p/CuxQjRwvGKw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">🎲 playing board games</a>, <a href="https://www.instagram.com/reel/CuoaWzXgtSR/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">🕺 dancing</a>, or <a href="https://www.instagram.com/reel/C1DISysSMxZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">🛼 roller skating</a>.</p>
+                <img id="animation-companies" class="animation-appear" src="./images/companies.png" alt="Companies Chris has worked at.">
             </div>
         </section>        
-        <section id="skills">
+        <section id="skills" class="animation-appear">
             <div class="section-content">
                 <h1>My design & engineering skills</h1>
                 <p>In the 11+ years I've been in the tech industry, my core competencies and skills are as follows:</p>
-                <div class="focus-box">
+                <div class="focus-box reveal">
                     <div class="focus-column">
                         <h2>🎨 Design:</h2>
                         <ul>
