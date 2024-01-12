@@ -54,7 +54,7 @@ p, a, li {
 
 h1 {
     font-size: 2.2em;
-    margin: 0 0 0.6em 0;
+    margin: 0 0 0.4em 0;
 }
 
 h2 {
@@ -256,6 +256,11 @@ section:nth-child(even), header, footer {
 }
 
 /* Media queries */
+/* Desktop */
+.mobile-visible {
+    display: none;
+}
+
 /* For Mobile */
 @media only screen and (max-width: 480px) {
     #header-content, #footer-content, .section-content {
@@ -305,5 +310,13 @@ section:nth-child(even), header, footer {
 
     section {
         padding: 2em 0;
+    }
+
+    .mobile-visible {
+        display: inline !important;
+    }
+
+    .mobile-hidden {
+        display: none !important;
     }
 }
