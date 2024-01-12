@@ -178,28 +178,30 @@ section:nth-child(odd), header, footer {
 }
 
 #animation-intro {
+    opacity: 0;
     animation: moveright 1s ease 1,
-    appear 1s ease 1;
+    appear 1s ease 1 forwards;
+    animation-delay: 2s;
 }
 
 #animation-intro-p1 {
-    animation-delay: 1s;
+    animation-delay: 3s;
 }
 
 #animation-intro-p2 {
-    animation-delay: 1.2s;
+    animation-delay: 3.2s;
 }
 
 #animation-intro-p3 {
-    animation-delay: 1.4s;
+    animation-delay: 3.4s;
 }
 
 #animation-companies {
-    animation-delay: 1.6s;
+    animation-delay: 3.6s;
 }
 
 #skills {
-    animation-delay: 1.8s;
+    animation-delay: 3.8s;
 }
 
 @keyframes moveright {
