@@ -204,6 +204,18 @@ section:nth-child(odd), header, footer {
     animation-delay: 2.8s;
 }
 
+#featured-work {
+    animation-delay: 3s;
+}
+
+#side-projects {
+    animation-delay: 3.2s;
+}
+
+#other-work {
+    animation-delay: 3.4s;
+}
+
 @keyframes moveright {
     0% {
         transform: translateX(-15%);
