@@ -213,27 +213,27 @@ section:nth-child(even), header, footer {
     opacity: 0;
     animation: moveright 1s ease 1,
     appear 1s ease 1 forwards;
-    animation-delay: 2.5s;
+    animation-delay: 2s;
 }
 
 #animation-intro-p1 {
-    animation-delay: 3.5s;
+    animation-delay: 3s;
 }
 
 #animation-intro-p2 {
-    animation-delay: 3.7s;
+    animation-delay: 3.2s;
 }
 
 #animation-companies {
-    animation-delay: 3.9s;
+    animation-delay: 3.4s;
 }
 
 #animation-intro-p3 {
-    animation-delay: 4.1s;
+    animation-delay: 3.6s;
 }
 
 #skills, #featured-work, #other-work, #side-projects {
-    animation-delay: 4.3s;
+    animation-delay: 3.8s;
 }
 
 /* Types of animations */
