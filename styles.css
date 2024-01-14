@@ -1,3 +1,4 @@
+/* Priming animations to load well */
 .js-loading *,
 .js-loading *:before,
 .js-loading *:after {
@@ -44,7 +45,7 @@ header a, footer a {
 
 /* Typographic styling */
 /* Fonts for headers */
-h1, h2 {
+h1, h2, h3 {
     font-family: 'Red Hat Display', sans-serif;
 }
 /* Fonts for body text */
@@ -58,6 +59,12 @@ h1 {
 }
 
 h2 {
+    font-size:1.8em;
+    margin: 0 0 0.4em 0;
+}
+
+h3 {
+    font-size: 1.4em;
     margin: 0 0 0.4em 0;
 }
 
@@ -67,7 +74,7 @@ p {
 }
 
 a {
-    color: #6CCFF6;
+    color: #259ac9;
     text-decoration: none;
 }
 
@@ -76,11 +83,25 @@ a:hover {
 }
 
 /* Image sizing */
-section img {
+img {
     height:100%;
     width:100%;
     object-fit: cover;
     margin: 0 0 1em 0;
+}
+
+.keyword-container {
+    display: flex;
+    gap: 0.4em 0.4em;
+    flex-wrap: wrap;
+}
+.keyword {
+    padding: 0 0.2em 0.2em 0.2em;
+    background-color: #E6ECF8;
+    border: 1px solid #E6ECF8;
+    width:fit-content;
+    margin:0;
+    font-size: 0.9em;
 }
 
 body {
@@ -170,6 +191,18 @@ section:nth-child(even), header, footer {
     margin: 0 0 2em 0;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
+/* Fixes for highlights list styling */
+.project li {
+    margin: 0 0 0.2em 1em;
+}
+/* Highlights styling */
+.project .focus-column {
+    width: 100%;
+    margin: 0 0 1em 0;
+    font-size: 0.9em;
+    border-radius: 0em;
+    background-color: #efefef;
+}
 
 /* Animation */
 /* Animation classes */
@@ -184,7 +217,7 @@ section:nth-child(even), header, footer {
 
 /* Animation for each section */
 /* Initial loading animation */
-#loading {
+/* #loading {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -197,7 +230,7 @@ section:nth-child(even), header, footer {
     animation: shrinkup 0.5s ease 1 forwards;
     animation-delay: 1.5s;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-}
+} */
 
 @keyframes shrinkup {
     0% {
@@ -216,7 +249,7 @@ section:nth-child(even), header, footer {
     animation-delay: 2s;
 }
 
-#animation-intro-p1 {
+/* #animation-intro-p1 {
     animation-delay: 3s;
 }
 
@@ -232,9 +265,9 @@ section:nth-child(even), header, footer {
     animation-delay: 3.6s;
 }
 
-#skills, #featured-work, #other-work, #side-projects {
+#skills, #tldr, #featured-work, #other-work, #side-projects {
     animation-delay: 3.8s;
-}
+} */
 
 /* Types of animations */
 @keyframes moveright {
@@ -290,6 +323,10 @@ section:nth-child(even), header, footer {
     .focus-column:first-child, .focus-column:last-child {
         margin: 0 0 1em 0;
         border-radius: 1em;
+    }
+
+    .project .focus-column {
+        border-radius: 0em;
     }
 }
 
