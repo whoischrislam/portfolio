@@ -69,12 +69,12 @@ p {
 }
 
 a {
-    color: #259ac9;
+    color: #26AF55;
     text-decoration: none;
 }
 
 a:hover {
-    color: #717EAD;
+    color: #1D8642;
 }
 
 /* Image sizing */
@@ -94,7 +94,7 @@ img {
 /* Button styling */
 button {
     width: 100%;
-    background-color: #259ac9;
+    background-color: #26AF55;
     color: #ffffff;
     border: none;
     padding: 0.8em 1.6em;
@@ -153,7 +153,7 @@ section p:last-child {
 }
 
 section:nth-child(even), header, footer {
-    background-color: #343C5B;
+    background-color: #2D2D2D;
     color: #ffffff;
 }
 
@@ -240,7 +240,7 @@ section:nth-child(even), header, footer {
     align-items: center;
     position: fixed;
     color: #ffffff;
-    background-color: #343C5B;
+    background-color: #2D2D2D;
     z-index: 1000;
     height: 100vh;
     width: 100vw;
