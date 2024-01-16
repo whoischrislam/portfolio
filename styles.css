@@ -69,12 +69,12 @@ p {
 }
 
 a {
-    color: #26AF55;
+    color: #259AC9;
     text-decoration: none;
 }
 
 a:hover {
-    color: #1D8642;
+    color: #259AC9;
 }
 
 /* Image sizing */
@@ -94,7 +94,7 @@ img {
 /* Button styling */
 button {
     width: 100%;
-    background-color: #26AF55;
+    background-color: #259AC9;
     color: #ffffff;
     border: none;
     padding: 0.8em 1.6em;
