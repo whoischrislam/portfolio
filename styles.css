@@ -45,7 +45,7 @@ header a, footer a {
 
 /* Typographic styling */
 /* Fonts for headers */
-h1, h2, h3 {
+h1, h2 {
     font-family: 'Red Hat Display', sans-serif;
 }
 /* Fonts for body text */
@@ -62,11 +62,6 @@ h2 {
     font-size:1.5em;
     margin: 0 0 0.4em 0;
 }
-
-/* h3 {
-    font-size: 1.4em;
-    margin: 0 0 0.4em 0;
-} */
 
 p {
     font-size: 1.1em;
