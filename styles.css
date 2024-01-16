@@ -239,7 +239,7 @@ section:nth-child(even), header, footer {
 
 /* Animation for each section */
 /* Initial loading animation */
-/* #loading {
+#loading {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -252,7 +252,7 @@ section:nth-child(even), header, footer {
     animation: shrinkup 0.5s ease 1 forwards;
     animation-delay: 1.5s;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-} */
+}
 
 @keyframes shrinkup {
     0% {
@@ -264,7 +264,7 @@ section:nth-child(even), header, footer {
     }    
 }
 
-/* #animation-intro {
+#animation-intro {
     opacity: 0;
     animation: moveright 1s ease 1,
     appear 1s ease 1 forwards;
@@ -289,7 +289,7 @@ section:nth-child(even), header, footer {
 
 #skills, #tldr, #featured-work, #other-work, #side-projects {
     animation-delay: 3.8s;
-} */
+}
 
 /* Types of animations */
 @keyframes moveright {
