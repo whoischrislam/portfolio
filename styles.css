@@ -267,6 +267,10 @@ section:nth-child(even), header, footer {
     border: none;
 }
 
+.project > .focus-column:last-child {
+    margin: 0;
+}
+
 /* Animation */
 /* Animation classes */
 .animation-appear {
