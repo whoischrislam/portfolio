@@ -1,12 +1,47 @@
-/* Priming animations to load well */
-.js-loading *,
-.js-loading *:before,
-.js-loading *:after {
-  animation-play-state: paused !important;
+/* CSS Variables */
+:root {
+/* Sizing */
+--page-width: 60vw;
+--page-height: 100%;
+/* Spacing */
+--gap: 0.4em 0.4em;
+--header-footer-padding: 1.6em 0;
+--section-padding: 4em 0;
+--container-padding: 1em;
+--project-margins: 0 0 2em 0;
+/* Typography */
+--header-font: 'Red Hat Display', sans-serif;
+--body-font: 'Sarabun', sans-serif;
+--h1-size: 2em;
+--h2-size: 1.5em;
+--p-size: 1.1em;
+--highlight-size: 0.8em;
+--header-spacing: 0 0 0.4em 0;
+--inline-spacing: 0 0 1em 0;
+/* Colors */
+--background: #2D2D2D;
+--secondary-background:#E6ECF8;;
+--primary: #259AC9;
+--secondary: #196A8A;
+--nav-link: #ffffff;
+--link:#259AC9;
+--white: #ffffff;
+--black:#2D2D2D;
+/* Drop Shadow */
+--drop-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+/* Button variables */
+--btn-font-size: 1.1em;
+--btn-border-radius: 0.4em;
+--btn-text:#ffffff;
+--btn-font-weight:900;
+/* Keyword variables */
+--keyword-size: 1em;
+/* Border */
+--border: 1px solid #E6ECF8;
+--border-radius: 1em;
 }
 
-/* Universal settings */
-html {
+:root {
     box-sizing: border-box;
 }
 
@@ -14,16 +49,101 @@ html {
     box-sizing: inherit;
 }
 
-/* Universal width of content */
-#header-content, #footer-content, .section-content {
-   width: 60vw;
-   height: 100%;
+/* Priming animations to load well */
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+  animation-play-state: paused !important;
 }
 
-#header-content, #footer-content {
+body {
+    color: var(--black);
+    margin: 0;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+}
+
+/* Universal width of content */
+#header-content, #footer-content, .section-content {
+   width: var(--page-width);
+   height: var(--page-height);
+}
+
+/* Typographic styling */
+/* Fonts for headers */
+h1, h2 {
+    font-family: var(--header-font);
+}
+/* Fonts for body text */
+p, a, li {
+    font-family: var(--body-font);
+}
+
+h1 {
+    font-size: var(--h1-size);
+    margin: var(--header-spacing);
+}
+
+h2 {
+    font-size: var(--h2-size);
+    margin: var(--header-spacing);
+}
+
+p {
+    font-size: var(--p-size);
+    margin: var(--inline-spacing);
+}
+
+a {
+    color: var(--link);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/* Components */
+/* Image sizing */
+img {
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    margin: var(--inline-spacing);
+}
+/* NEEDS WORK */
+/* Button group */
+.button-group {
+    display: flex;
+    gap: var(--gap);
+    margin: var(--inline-spacing);
+}
+/* NEEDS WORK */
+/* Button styling */
+button {
+    width: 100%;
+    background-color: var(--primary);
+    color: var(--btn-text);
+    border: none;
+    padding: 0.8em 1.6em;
+    border-radius: var(--btn-border-radius);
+    font-size: var(--btn-font-size);
+    font-weight: var(--btn-font-weight);
+    cursor: pointer;
+    filter: drop-shadow(var(--drop-shadow));
+}
+
+.keyword-container {
+    display: flex;
+    gap: var(--gap);
+    flex-wrap: wrap;
+    margin: var(--inline-spacing);
+}
+.keyword {
+    padding: 0 0.2em 0.2em 0.2em;
+    background-color: var(--secondary-background);
+    margin: 0;
+    font-size: var(--keyword-size);
 }
 
 /* Header styling */
@@ -31,136 +151,61 @@ header, footer {
     width: 100vw;
     display: flex;
     justify-content: center;
-    padding: 1.6em 0;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    padding: var(--header-footer-padding);
+    filter: drop-shadow(drop-shadow(var(--drop-shadow)));
 }
 
+/* Spacing reset for header and footer */
 header p, footer p {
     margin: 0;
 }
 
+/* Styling for navigation links */
 header a, footer a {
-    color: #ffffff;
+    color: var(--nav-link);
 }
 
-/* Typographic styling */
-/* Fonts for headers */
-h1, h2 {
-    font-family: 'Red Hat Display', sans-serif;
-}
-/* Fonts for body text */
-p, a, li {
-    font-family: 'Sarabun', sans-serif;
-}
-
-h1 {
-    font-size: 2em;
-    margin: 0 0 0.4em 0;
-}
-
-h2 {
-    font-size:1.5em;
-    margin: 0 0 0.4em 0;
-}
-
-p {
-    font-size: 1.1em;
-    margin: 0 0 1em 0;
-}
-
-a {
-    color: #259AC9;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #259AC9;
-}
-
-/* Image sizing */
-img {
-    height:100%;
-    width:100%;
-    object-fit: cover;
-    margin: 0 0 1em 0;
-}
-/* Button group */
-.button-group {
+/* Header and footer content spacing and alignment */
+#header-content, #footer-content {
     display: flex;
-    gap: 0.4em 0.4em;
-    margin: 0 0 1em 0;
-}
-
-/* Button styling */
-button {
-    width: 100%;
-    background-color: #259AC9;
-    color: #ffffff;
-    border: none;
-    padding: 0.8em 1.6em;
-    border-radius: 0.4em;
-    font-size: 1.2em;
-    font-weight: 900;
-    cursor: pointer;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-}
-
-.keyword-container {
-    display: flex;
-    gap: 0.4em 0.4em;
-    flex-wrap: wrap;
-    margin: 0 0 1em 0;
-}
-.keyword {
-    padding: 0 0.2em 0.2em 0.2em;
-    background-color: #E6ECF8;
-    border: 1px solid #E6ECF8;
-    width:fit-content;
-    margin:0;
-    font-size: 1em;
-}
-
-body {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 }
 
-
-#links {
+#nav-links {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 20em;
 }
 
-#links a {
+#nav-links a {
     display: flex;
     align-items: center;
 }
 
 /* Section styling */
 section {
-    padding: 4em 0;
+    padding: var(--section-padding);
     width: 100vw;
     display: flex;
     justify-content: center;
 }
-
+/* Fix for last p in section */
 section p:last-child {
     margin: 0 0 0 0;
 }
-
+/* NEEDS WORK */
+/* Alternating section backgrounds */
 section:nth-child(even), header, footer {
-    background-color: #2D2D2D;
-    color: #ffffff;
+    background-color: var(--background);
+    color: var(--white);
 }
-
+/* NEEDS WORK */
 .focus-box {
     display: flex;
     flex-wrap: wrap;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    filter: drop-shadow(var(--drop-shadow));
 }
 
 .focus-box p, ul {
@@ -175,12 +220,12 @@ section:nth-child(even), header, footer {
 }
 
 .focus-column {
-    border: 1px solid #E6ECF8;
-    background-color: #ffffff;
-    color:black;
-    padding:1em;
+    border: var(--border);
+    background-color: var(--white);
+    color:var(--black);
+    padding: var(--container-padding);
     min-width: 14em;
-    border-radius: 1em;
+    border-radius: var(--border-radius);
 }
 
 .focus-column h2 {
@@ -196,29 +241,34 @@ section:nth-child(even), header, footer {
 .focus-column:last-child {
     border-radius: 0 1em 1em 0;
 }
-
+/* NEEDS WORK */
 .project {
-    border: 1px solid #E6ECF8;
+    border: var(--border);
     background-color: #ffffff;
-    color: #000000;
-    padding:1em;
-    min-width: 14em;
-    border-radius: 1em;
-    margin: 0 0 2em 0;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    color: var(--black);
+    padding: var(--container-padding);
+    width: 100%;
+    border-radius: var(--border-radius);
+    margin: var(--project-margins);
+    filter: drop-shadow(var(--drop-shadow));
 }
+/* HIGHLIGHTS NEED WORK */
 /* Fixes for highlights list styling */
 .project li {
     margin: 0 0 0.2em 1em;
 }
 /* Highlights styling */
-.project .focus-column {
+.project > .focus-column {
+    margin: var(--inline-spacing);
+    font-size: var(--highlight-size);
     width: 100%;
-    margin: 0 0 1em 0;
-    font-size: 1em;
     border-radius: 0em;
-    background-color: #E6ECF8;
+    background-color: var(--secondary-background);
     border: none;
+}
+
+.project > .focus-column:last-child {
+    margin: 0;
 }
 
 /* Animation */
@@ -246,7 +296,7 @@ section:nth-child(even), header, footer {
     width: 100vw;
     animation: shrinkup 0.5s ease 1 forwards;
     animation-delay: 1.5s;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    filter: drop-shadow(var(--drop-shadow));
 }
 
 @keyframes shrinkup {
@@ -314,20 +364,20 @@ section:nth-child(even), header, footer {
 /* For Mobile */
 @media only screen and (max-width: 480px) {
     #header-content, #footer-content, .section-content {
-        width: 90vw;
+        --page-width: 90vw;
     }
-
+    /* NEEDS WORK ON MOBILE VERSION MENU */
     header, footer {
         width: 100vw;
         padding: 1em 0;
     }
-
+    /* NEEDS WORK TO HAVE LOGO INSTEAD OF NAME */
     header p, footer p {
         display: none;
     }
 
     section {
-        padding: 2em 0;
+        --section-padding: 2em 0;
     }
     .focus-box {
         justify-content: center;
@@ -338,8 +388,12 @@ section:nth-child(even), header, footer {
     }
 
     .focus-column:first-child, .focus-column:last-child {
-        margin: 0 0 1em 0;
         border-radius: 1em;
+    }
+
+    .focus-column:first-child {
+        --inline-spacing: 0 0 1em 0;
+        margin: var(--inline-spacing);
     }
 
     .project .focus-column {
@@ -350,7 +404,7 @@ section:nth-child(even), header, footer {
 /* For Tablets */
 @media only screen and (max-width: 768px) {
     #header-content, #footer-content, .section-content {
-        width: 90vw;
+        --page-width: 90vw;
     }
 
     header, footer {
@@ -358,12 +412,8 @@ section:nth-child(even), header, footer {
         padding: 1em 0;
     }
 
-    header p, footer p {
-        display: none;
-    }
-
     section {
-        padding: 2em 0;
+        --section-padding: 2em 0;
     }
 
     .mobile-visible {
