@@ -1,43 +1,44 @@
 /* CSS Variables */
 :root {
 /* Sizing */
---page-width: 60vw;
+--page-width: 80vw;
 --page-height: 100%;
 /* Spacing */
 --gap: 0.4em 0.4em;
 --header-footer-padding: 1.6em 0;
 --section-padding: 4em 0;
 --container-padding: 1em;
---project-margins: 0 0 2em 0;
+--project-margins: 0 0 0 0;
 /* Typography */
---header-font: 'Red Hat Display', sans-serif;
+--header-font: 'Merriweather', serif;
 --body-font: 'Sarabun', sans-serif;
---h1-size: 2em;
---h2-size: 1.5em;
---p-size: 1.1em;
---highlight-size: 0.8em;
+--h1-size: 4em;
+--h2-size: 2em;
+--p-size: 1.4em;
+--highlight-size: 1em;
 --header-spacing: 0 0 0.4em 0;
 --inline-spacing: 0 0 1em 0;
 /* Colors */
 --background: #2D2D2D;
---secondary-background:#E6ECF8;;
+--secondary-background:#EBF2FF;
 --primary: #259AC9;
 --secondary: #196A8A;
 --nav-link: #ffffff;
 --link:#259AC9;
 --white: #ffffff;
 --black:#2D2D2D;
+--gray: #f2f2f2;
 /* Drop Shadow */
---drop-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+--drop-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 /* Button variables */
 --btn-font-size: 1.1em;
 --btn-border-radius: 0.4em;
 --btn-text:#ffffff;
 --btn-font-weight:900;
 /* Keyword variables */
---keyword-size: 1em;
+--keyword-size: 0.8em;
 /* Border */
---border: 1px solid #E6ECF8;
+--border: 1px solid #f2f2f2;
 --border-radius: 1em;
 }
 
@@ -83,6 +84,7 @@ p, a, li {
 h1 {
     font-size: var(--h1-size);
     margin: var(--header-spacing);
+    line-height: 1.2em;
 }
 
 h2 {
@@ -93,6 +95,11 @@ h2 {
 p {
     font-size: var(--p-size);
     margin: var(--inline-spacing);
+    line-height: 1.5em;
+}
+
+li {
+    font-size: var(--highlight-size);
 }
 
 a {
@@ -115,8 +122,13 @@ img {
 /* Button group */
 .button-group {
     display: flex;
+    flex-direction: row;
     gap: var(--gap);
     margin: var(--inline-spacing);
+}
+
+.button-group:last-child {
+    margin:0;
 }
 /* NEEDS WORK */
 /* Button styling */
@@ -133,17 +145,39 @@ button {
     filter: drop-shadow(var(--drop-shadow));
 }
 
+button:hover {
+    background-color: var(--secondary);
+}
+
+button:focus {
+    background-color: var(--secondary);
+}
+
 .keyword-container {
     display: flex;
     gap: var(--gap);
     flex-wrap: wrap;
     margin: var(--inline-spacing);
 }
-.keyword {
-    padding: 0 0.2em 0.2em 0.2em;
-    background-color: var(--secondary-background);
+
+.keyword-container:last-child {
     margin: 0;
+}
+
+.keyword {
+    border-radius: 0.2em;
+    padding: 0 0.8em 0.2em 0.8em;
+    background-color: var(--gray);
+    margin: 0;
+    color:var(--black);
     font-size: var(--keyword-size);
+    font-weight: 100;
+}
+
+.keyword:hover {
+    background-color: var(--secondary-background);
+    color: var(--black);
+    cursor: default;
 }
 
 /* Header styling */
@@ -191,6 +225,23 @@ section {
     display: flex;
     justify-content: center;
 }
+
+#introduction > .section-content {
+    display: flex;
+    flex-direction: column;
+}
+
+#introduction > .section-content > div {
+    display: flex;
+}
+#introduction > .section-content > div > p {
+    width: 46%;
+}
+
+#introduction > .section-content > div > p:first-child {
+    margin: 0 1em 0 0;
+}
+
 /* Fix for last p in section */
 section p:last-child {
     margin: 0 0 0 0;
@@ -242,29 +293,52 @@ section:nth-child(even), header, footer {
     border-radius: 0 1em 1em 0;
 }
 /* NEEDS WORK */
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
 .project {
     border: var(--border);
     background-color: #ffffff;
     color: var(--black);
-    padding: var(--container-padding);
-    width: 100%;
+    width: 46%;
     border-radius: var(--border-radius);
     margin: var(--project-margins);
     filter: drop-shadow(var(--drop-shadow));
 }
+
+.project-content {    
+    padding: var(--container-padding);
+}
+
+.project > h2 {
+    border-radius: 0.9rem 0.9rem 0 0;
+    margin: 0;
+    padding: 1rem;
+    color: var(--black);
+    background-color: var(--gray);
+}
+
+.project > .project-content > p {
+    font-size: 1em;
+}
+
 /* HIGHLIGHTS NEED WORK */
 /* Fixes for highlights list styling */
 .project li {
     margin: 0 0 0.2em 1em;
 }
 /* Highlights styling */
-.project > .focus-column {
+.project > .project-content > .focus-column {
     margin: var(--inline-spacing);
-    font-size: var(--highlight-size);
     width: 100%;
     border-radius: 0em;
     background-color: var(--secondary-background);
     border: none;
+}
+.project > .project-content > .focus-column h2 {
+    font-size: 1em;
 }
 
 .project > .focus-column:last-child {
@@ -282,9 +356,8 @@ section:nth-child(even), header, footer {
     animation: slideup 1s ease 1 forwards;
 }
 
-/* Animation for each section */
-/* Initial loading animation */
-#loading {
+/* Animations */
+/* #loading {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -297,16 +370,6 @@ section:nth-child(even), header, footer {
     animation: shrinkup 0.5s ease 1 forwards;
     animation-delay: 1.5s;
     filter: drop-shadow(var(--drop-shadow));
-}
-
-@keyframes shrinkup {
-    0% {
-        transform: translateY(0%);
-    }
-    100% {
-        transform: translateY(-100%);
-        display: none;
-    }    
 }
 
 #animation-intro {
@@ -324,17 +387,9 @@ section:nth-child(even), header, footer {
     animation-delay: 3.2s;
 }
 
-#animation-companies {
-    animation-delay: 3.4s;
-}
-
-#animation-intro-p3 {
-    animation-delay: 3.6s;
-}
-
 #skills, #tldr, #featured-work, #other-work, #side-projects {
-    animation-delay: 3.8s;
-}
+    animation-delay: 3.4s;
+} */
 
 /* Types of animations */
 @keyframes moveright {
@@ -352,6 +407,16 @@ section:nth-child(even), header, footer {
     }
     100% {
         opacity: 1;
+    }    
+}
+
+@keyframes shrinkup {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-100%);
+        display: none;
     }    
 }
 
@@ -403,6 +468,18 @@ section:nth-child(even), header, footer {
 
 /* For Tablets */
 @media only screen and (max-width: 768px) {
+    h1 {
+        --h1-size: 2em;
+    }
+
+    h2 {
+        --h2-size: 1.4em;
+    }
+
+    p {
+        --p-size: 1.1em;
+    }
+    
     #header-content, #footer-content, .section-content {
         --page-width: 90vw;
     }
@@ -416,11 +493,37 @@ section:nth-child(even), header, footer {
         --section-padding: 2em 0;
     }
 
+    #introduction > .section-content > div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #introduction > .section-content > div > p:first-child {
+        margin: 0 0 1em 0;
+    }
+
+    #introduction > .section-content > div > p {
+        width: 100%;
+    }
+
+    .project {
+        width: 100vw;
+    }
+
     .mobile-visible {
         display: inline !important;
     }
 
     .mobile-hidden {
         display: none !important;
+    }
+}
+
+/* For Desktop */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    #header-content, #footer-content, .section-content {
+        --page-width: 90vw;
+    }
+    .project {
+        width: 46%;
     }
 }

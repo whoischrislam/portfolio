@@ -4,7 +4,7 @@
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&family=Sarabun&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Sarabun:wght@100;400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -34,17 +34,18 @@
         <section id="introduction">
             <div class="section-content">
                 <h1 id="animation-intro">👋 Hi, I'm Chris Lam. Nice to meet you!</h1>
-                <p id="animation-intro-p1" class="animation-appear">I'm a front end engineer with a background in design based in <del>sunny</del> foggy 🌁 San Francisco, CA. I love to code and design websites, apps, and games!</p>
-                <p id="animation-intro-p2" class="animation-appear">Since 2012, from startups to large companies, I’ve shipped digital products from 0-to-1, established design systems, and helped companies build out their product teams and processes.</p>
-                <img id="animation-companies" class="animation-appear mobile-hidden" src="./images/companies.png" alt="Companies Chris has worked at.">
-                <img id="animation-companies" class="animation-appear mobile-visible" src="./images/companies-mobile.png" alt="Companies Chris has worked at.">
-                <p id="animation-intro-p3" class="animation-appear">When I'm not coding or designing, you'll find me working on 🎮 game development, <a href="https://www.instagram.com/p/CuxQjRwvGKw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">🎲 playing board games</a>, <a href="https://www.instagram.com/reel/CuoaWzXgtSR/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">🕺 dancing</a>, or <a href="https://www.instagram.com/reel/C1DISysSMxZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">🛼 roller skating</a>.</p>
+                <div>
+                    <p id="animation-intro-p1" class="animation-appear">I'm a front end engineer with a background in design based in <del>sunny</del> foggy 🌁 San Francisco, CA. I love to code and design websites, apps, and games!</p>
+                    <p id="animation-intro-p2" class="animation-appear">When I'm not coding or designing, you'll find me working on 🎮 game development, <a href="https://www.instagram.com/p/CuxQjRwvGKw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">🎲 playing board games</a>, <a href="https://www.instagram.com/reel/CuoaWzXgtSR/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">🕺 dancing</a>, or <a href="https://www.instagram.com/reel/C1DISysSMxZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">🛼 roller skating</a>.</p>
+                </div>
             </div>
         </section>        
         <section id="skills" class="animation-appear">
             <div class="section-content">
-                <h1>Engineering & design skills</h1>
-                <p>I've been working in technology for the last 11+ years and have these core competencies and skills:</p>
+                <h1>Experience & skills</h1>
+                <p class="animation-appear">Since 2012, from startups to large companies, I’ve shipped digital products from 0-to-1, established design systems, and helped companies build out their product teams and processes.</p>
+                <!-- <img class="animation-appear mobile-hidden" src="./images/companies.png" alt="Companies Chris has worked at.">
+                <img class="animation-appear mobile-visible" src="./images/companies-mobile.png" alt="Companies Chris has worked at."> -->
                 <div class="focus-box reveal">
                     <div class="focus-column">
                         <h2>🤖 Engineering</h2>
@@ -75,177 +76,190 @@
         </section>
         <section id="featured-work" class="animation-appear">
             <div class="section-content">
-                <h1>Work</h1>
+                <h1>Selected work</h1>
                 <p>The following is a selection of the engineering work I've done in previous roles.</p>
-                <div class="project">
-                    <h2>Modus Create</h2>
-                    <div class="keyword-container">
-                        <p class="keyword">Agency</p>
-                        <p class="keyword">Consulting</p>
-                        <p class="keyword">Enterprise</p>
-                        <p class="keyword">Figma</p>
-                        <p class="keyword">Engineering</p>
-                        <p class="keyword">Handlebars</p>
-                        <p class="keyword">CSS</p>
-                        <p class="keyword">TypeScript</p>
-                        <p class="keyword">JavaScript</p>
-                        <p class="keyword">Postgres</p>
-                        <p class="keyword">Docker</p>
-                        <p class="keyword">Web</p>
+                <div class="project-container">
+                    <div class="project">
+                        <h2>Modus Create</h2>
+                        <div class="project-content">
+                            <p>As a software engineer in the product studio team, I worked on apps for Atlassian JIRA and Confluence Cloud. Due to my background in design, my focus was on front end engineering.</p>
+                            <img src="./images/modus.png" class="mobile-hidden" alt="modus splash">
+                            <img src="./images/modus-mobile.png" class="mobile-visible" alt="modus mobile splash">                        
+                            <div class="focus-column">
+                                <h2>Highlights:</h2>
+                                <ul>
+                                    <li>Wrote and published documentation for dev environment setup and configuration for each GitHub repo.</li>
+                                    <li>Deployed dark mode on the JIRA and Confluence Cloud apps.</li>
+                                    <li>Contributed and assisted the team's CI/CD pipeline with Docker compose.</li>
+                                    <li>Collaborated and participated in code reviews and submitting PR's.</li>
+                                </ul>
+                            </div>
+                            <div class="keyword-container">
+                                <p class="keyword">Agency</p>
+                                <p class="keyword">Consulting</p>
+                                <p class="keyword">Enterprise</p>
+                                <p class="keyword">Figma</p>
+                                <p class="keyword">Engineering</p>
+                                <p class="keyword">Handlebars</p>
+                                <p class="keyword">CSS</p>
+                                <p class="keyword">TypeScript</p>
+                                <p class="keyword">JavaScript</p>
+                                <p class="keyword">Postgres</p>
+                                <p class="keyword">Docker</p>
+                                <p class="keyword">Web</p>
+                            </div>
+                            <button class="button" onclick="window.open('https://marketplace.atlassian.com/vendors/1212980/modus-create', '_blank')"><i class="fa fa-eye"></i> View the apps marketplace</button>
+                        </div>
                     </div>
-                    <p>As a software engineer in the product studio team, I worked on apps for Atlassian JIRA and Confluence Cloud. Due to my background in design, my focus was on front end engineering.</p>
-                    </p>
-                    <img src="./images/modus.png" class="mobile-hidden" alt="modus splash">
-                    <img src="./images/modus-mobile.png" class="mobile-visible" alt="modus mobile splash">
-                    <div class="focus-column">
-                        <h2>Highlights:</h2>
-                        <ul>
-                            <li>Wrote and published documentation for dev environment setup and configuration for each GitHub repo.</li>
-                            <li>Deployed dark mode on the JIRA and Confluence Cloud apps.</li>
-                            <li>Contributed and assisted the team's CI/CD pipeline with Docker compose.</li>
-                            <li>Collaborated and participated in code reviews and submitting PR's.</li>
-                        </ul>
+                    <div class="project">
+                        <h2>GoodRx</h2>
+                        <div class="project-content">
+                            <p>As a designer in the GoodRx Health team, I built various data visualization projects using d3.js, JavaScript, and Vega.</p>
+                            <img src="./images/goodrx.png" class="mobile-hidden" alt="goodrx splash">
+                            <img src="./images/goodrx-mobile.png" class="mobile-visible" alt="goodrx mobile splash">
+                            <div class="focus-column">
+                                <h2>Highlights:</h2>
+                                <ul>
+                                    <li>Designed a new user flow for finding and redeeming prescription drug discount coupons, which improved conversion by 2.5x. </li>
+                                    <li>Designed data visualizations featured in <a href="https://abcnews.go.com/GMA/Wellness/video/flu-numbers-show-growing-outbreak-us-53014507" target="_blank">Good Morning America</a>, ABC News, and The Motley Fool.</li>
+                                    <li>Published health fact sheets to advocate for policy change for prescription drug prices (<a href="https://www.congress.gov/bill/115th-congress/senate-bill/2554" target="_blank">S.2554 - Patient Right to Know Drug Prices Act</a> & <a href="https://www.congress.gov/bill/115th-congress/senate-bill/2553" target="_blank">S.2553 - Know the Lowest Price Act of 2018</a>).</li>
+                                </ul>
+                            </div>
+                            <div class="keyword-container">
+                                <p class="keyword">Startup</p>
+                                <p class="keyword">Seed</p>
+                                <p class="keyword">Series A</p>
+                                <p class="keyword">Healthcare</p>
+                                <p class="keyword">IPO</p>
+                                <p class="keyword">Engineering</p>
+                                <p class="keyword">Prototyping</p>
+                                <p class="keyword">Data Visualization</p>
+                                <p class="keyword">JavaScript</p>
+                                <p class="keyword">Vega</p>
+                                <p class="keyword">d3.js</p>
+                                <p class="keyword">Web</p>
+                                <p class="keyword">Mobile</p>
+                            </div>
+                        </div>
                     </div>
-                    <button class="button" onclick="window.open('https://marketplace.atlassian.com/vendors/1212980/modus-create', '_blank')">View the apps marketplace</button>
-                </div>
-                <div class="project">
-                    <h2>GoodRx</h2>
-                    <div class="keyword-container">
-                        <p class="keyword">Startup</p>
-                        <p class="keyword">Seed</p>
-                        <p class="keyword">Series A</p>
-                        <p class="keyword">Healthcare</p>
-                        <p class="keyword">IPO</p>
-                        <p class="keyword">Engineering</p>
-                        <p class="keyword">Prototyping</p>
-                        <p class="keyword">Data Visualization</p>
-                        <p class="keyword">JavaScript</p>
-                        <p class="keyword">Vega</p>
-                        <p class="keyword">d3.js</p>
-                        <p class="keyword">Web</p>
-                        <p class="keyword">Mobile</p>
+                    <div class="project">
+                        <h2>TaskRabbit</h2>
+                        <div class="project-content">
+                            <p>Many of my tasks as a designer at TaskRabbit heavily involved prototyping in code using JavaScript.</p>
+                            <img src="./images/taskrabbit.png" class="mobile-hidden" alt="taskrabbit splash">
+                            <img src="./images/taskrabbit-mobile.png" class="mobile-visible" alt="taskrabbit mobile splash">
+                            <div class="focus-column">
+                                <h2>Highlights:</h2>
+                                <ul>
+                                    <li>Wrote and optimized the CSS for all the TaskRabbit support <a href="https://web.archive.org/web/20150321031347/https://taskrabbit.zendesk.com/home" target="_blank">pages</a>.</li>
+                                    <li>Contributed to standardizing the design system including UI copy, design documentation of web and mobile, and branding guidelines.</li>
+                                    <li>Assisted in the company <a href="https://web.archive.org/web/20140729221745/https://www.taskrabbit.com/" target="_blank">rebrand/reboot</a>, leading to brand improvement and higher bookings.</li>
+                                    <li>Designed and prototyped new <a href="https://www.taskrabbit.com/become-a-tasker" target="_blank">Tasker</a> web and mobile features, leading to increased revenue.</li>                            
+                                </ul>
+                            </div>
+                            <div class="keyword-container">
+                                <p class="keyword">Startup</p>
+                                <p class="keyword">Series C</p>
+                                <p class="keyword">Marketplace</p>
+                                <p class="keyword">Acquisition</p>
+                                <p class="keyword">Engineering</p>
+                                <p class="keyword">CSS</p>
+                                <p class="keyword">JavaScript</p>
+                                <p class="keyword">Prototyping</p>
+                                <p class="keyword">Framer</p>
+                                <p class="keyword">Design System</p>
+                                <p class="keyword">Web</p>
+                                <p class="keyword">Mobile</p>
+                            </div>
+                        </div>
                     </div>
-                    <p>As a designer in the GoodRx Health team, I built various data visualization projects using d3.js, JavaScript, and Vega.</p>
-                    <img src="./images/goodrx.png" class="mobile-hidden" alt="goodrx splash">
-                    <img src="./images/goodrx-mobile.png" class="mobile-visible" alt="goodrx mobile splash">
-                    <div class="focus-column">
-                        <h2>Highlights:</h2>
-                        <ul>
-                            <li>Designed a new user flow for finding and redeeming prescription drug discount coupons, which improved conversion by 2.5x. </li>
-                            <li>Designed data visualizations featured in <a href="https://abcnews.go.com/GMA/Wellness/video/flu-numbers-show-growing-outbreak-us-53014507" target="_blank">Good Morning America</a>, ABC News, and The Motley Fool.</li>
-                            <li>Published health fact sheets to advocate for policy change for prescription drug prices (<a href="https://www.congress.gov/bill/115th-congress/senate-bill/2554" target="_blank">S.2554 - Patient Right to Know Drug Prices Act</a> & <a href="https://www.congress.gov/bill/115th-congress/senate-bill/2553" target="_blank">S.2553 - Know the Lowest Price Act of 2018</a>).</li>
-                        </ul>
+                    <div class="project">
+                        <h2>Iodine (acquired by GoodRx)</h2>
+                        <div class="project-content">
+                            <p>Many of the prototypes and data visualizations were built in JavaScript and d3.js.</p>
+                            <img src="./images/iodine.png" class="mobile-hidden" alt="iodine splash">
+                            <img src="./images/iodine-mobile.png" class="mobile-visible" alt="iodine mobile splash">
+                            <div class="focus-column">
+                                <h2>Highlights:</h2>
+                                <ul>
+                                    <li>Redesigned drug alternative pages for consumers to be better informed about making decisions for finding alternatives to the prescription drugs they may be taking which increased overall session time and traffic for iodine.com.</li>
+                                    <li>Designed a new live feature called "Ask a Pharmacist", which resulted in higher engagement on iodine.com.</li>
+                                    <li>Won the 2018 Webby Award for <a href="https://winners.webbyawards.com/2018/websites-and-mobile-sites/general-websites-and-mobile-sites/health-wellness/47451/iodine" target="_blank">Best Health Website</a>.</li>                            
+                                </ul>
+                            </div>
+                            <div class="keyword-container">
+                                <p class="keyword">Startup</p>
+                                <p class="keyword">Healthcare</p>
+                                <p class="keyword">Acquisition</p>
+                                <p class="keyword">Engineering</p>
+                                <p class="keyword">JavaScript</p>
+                                <p class="keyword">Prototyping</p>
+                                <p class="keyword">Data Visualization</p>
+                                <p class="keyword">Vega</p>
+                                <p class="keyword">d3.js</p>
+                                <p class="keyword">Web</p>
+                                <p class="keyword">Mobile</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="project">
-                    <h2>TaskRabbit</h2>
-                    <div class="keyword-container">
-                        <p class="keyword">Startup</p>
-                        <p class="keyword">Series C</p>
-                        <p class="keyword">Marketplace</p>
-                        <p class="keyword">Acquisition</p>
-                        <p class="keyword">Engineering</p>
-                        <p class="keyword">CSS</p>
-                        <p class="keyword">JavaScript</p>
-                        <p class="keyword">Prototyping</p>
-                        <p class="keyword">Framer</p>
-                        <p class="keyword">Design System</p>
-                        <p class="keyword">Web</p>
-                        <p class="keyword">Mobile</p>
+                    <div class="project">
+                        <h2>Pathstream</h2>
+                        <div class="project-content">
+                            <p>Besides my design responsibilities at Pathstream, I was heavily involved with creation of the design system and writing CSS for the website.</p>
+                            <img src="./images/pathstream.png" class="mobile-hidden" alt="pathstream splash">
+                            <img src="./images/pathstream-mobile.png" class="mobile-visible" alt="pathstream mobile splash">
+                            <div class="focus-column">
+                                <h2>Highlights:</h2>
+                                <ul>
+                                    <li>Wrote and optimized the CSS for the new website.</li>
+                                    <li>Co-created a new design system using Storybook with an engineer.</li>
+                                    <li>Enhanced the entire student user experience by designing features within the proprietary Learning Management System to improve accessibility and engagement.</li>
+                                    <li>Created essential features for college instructors by utilizing feedback to implement solutions to facilitate better communication, organization, and support for courses and students.</li>                           
+                                </ul>
+                            </div>
+                            <div class="keyword-container">
+                                <p class="keyword">Startup</p>
+                                <p class="keyword">Series A</p>
+                                <p class="keyword">Education</p>
+                                <p class="keyword">Engineering</p>
+                                <p class="keyword">CSS</p>
+                                <p class="keyword">Design System</p>
+                                <p class="keyword">Storybook</p>
+                                <p class="keyword">Prototyping</p>
+                                <p class="keyword">InVision</p>
+                                <p class="keyword">Web</p>
+                                <p class="keyword">Mobile</p>
+                            </div>
+                        </div>
                     </div>
-                    <p>Many of my tasks as a designer at TaskRabbit heavily involved prototyping in code using JavaScript.</p>
-                    <img src="./images/taskrabbit.png" class="mobile-hidden" alt="taskrabbit splash">
-                    <img src="./images/taskrabbit-mobile.png" class="mobile-visible" alt="taskrabbit mobile splash">
-                    <div class="focus-column">
-                        <h2>Highlights:</h2>
-                        <ul>
-                            <li>Wrote and optimized the CSS for all the TaskRabbit support <a href="https://web.archive.org/web/20150321031347/https://taskrabbit.zendesk.com/home" target="_blank">pages</a>.</li>
-                            <li>Contributed to standardizing the design system including UI copy, design documentation of web and mobile, and branding guidelines.</li>
-                            <li>Assisted in the company <a href="https://web.archive.org/web/20140729221745/https://www.taskrabbit.com/" target="_blank">rebrand/reboot</a>, leading to brand improvement and higher bookings.</li>
-                            <li>Designed and prototyped new <a href="https://www.taskrabbit.com/become-a-tasker" target="_blank">Tasker</a> web and mobile features, leading to increased revenue.</li>                            
-                        </ul>
-                    </div>
-                </div>
-                <div class="project">
-                    <h2>Iodine (acquired by GoodRx)</h2>
-                    <div class="keyword-container">
-                        <p class="keyword">Startup</p>
-                        <p class="keyword">Healthcare</p>
-                        <p class="keyword">Acquisition</p>
-                        <p class="keyword">Engineering</p>
-                        <p class="keyword">JavaScript</p>
-                        <p class="keyword">Prototyping</p>
-                        <p class="keyword">Data Visualization</p>
-                        <p class="keyword">Vega</p>
-                        <p class="keyword">d3.js</p>
-                        <p class="keyword">Web</p>
-                        <p class="keyword">Mobile</p>
-                    </div>
-                    <p>Many of the prototypes and data visualizations were built in JavaScript and d3.js.</p>
-                    <img src="./images/iodine.png" class="mobile-hidden" alt="iodine splash">
-                    <img src="./images/iodine-mobile.png" class="mobile-visible" alt="iodine mobile splash">
-                    <div class="focus-column">
-                        <h2>Highlights:</h2>
-                        <ul>
-                            <li>Redesigned drug alternative pages for consumers to be better informed about making decisions for finding alternatives to the prescription drugs they may be taking which increased overall session time and traffic for iodine.com.</li>
-                            <li>Designed a new live feature called "Ask a Pharmacist", which resulted in higher engagement on iodine.com.</li>
-                            <li>Won the 2018 Webby Award for <a href="https://winners.webbyawards.com/2018/websites-and-mobile-sites/general-websites-and-mobile-sites/health-wellness/47451/iodine" target="_blank">Best Health Website</a>.</li>                            
-                        </ul>
-                    </div>
-                </div>
-                <div class="project">
-                    <h2>Pathstream</h2>
-                    <div class="keyword-container">
-                        <p class="keyword">Startup</p>
-                        <p class="keyword">Series A</p>
-                        <p class="keyword">Education</p>
-                        <p class="keyword">Engineering</p>
-                        <p class="keyword">CSS</p>
-                        <p class="keyword">Design System</p>
-                        <p class="keyword">Storybook</p>
-                        <p class="keyword">Prototyping</p>
-                        <p class="keyword">InVision</p>
-                        <p class="keyword">Web</p>
-                        <p class="keyword">Mobile</p>
-                    </div>
-                    <p>Besides my design responsibilities at Pathstream, I was heavily involved with creation of the design system and writing CSS for the website.</p>
-                    <img src="./images/pathstream.png" class="mobile-hidden" alt="pathstream splash">
-                    <img src="./images/pathstream-mobile.png" class="mobile-visible" alt="pathstream mobile splash">
-                    <div class="focus-column">
-                        <h2>Highlights:</h2>
-                        <ul>
-                            <li>Wrote and optimized the CSS for the new website.</li>
-                            <li>Co-created a new design system using Storybook with an engineer.</li>
-                            <li>Enhanced the entire student user experience by designing features within the proprietary Learning Management System to improve accessibility and engagement.</li>
-                            <li>Created essential features for college instructors by utilizing feedback to implement solutions to facilitate better communication, organization, and support for courses and students.</li>                           
-                        </ul>
-                    </div>
-                </div>
-                <div class="project">
-                    <h2>Clover Health</h2>
-                    <div class="keyword-container">
-                        <p class="keyword">Startup</p>
-                        <p class="keyword">Seed</p>
-                        <p class="keyword">Series A</p>
-                        <p class="keyword">Healthcare</p>
-                        <p class="keyword">IPO</p>
-                        <p class="keyword">Prototyping</p>
-                        <p class="keyword">CSS</p>
-                        <p class="keyword">Design System</p>
-                        <p class="keyword">Web</p>
-                        <p class="keyword">Mobile</p>
-                    </div>
-                    <p>Collaborated and helped across the entire company to create and improve internal processes for product development especially between engineering, design, and product. It was a fun opportunity to learn how to build a startup + team from the ground up!</p>
-                    <img src="./images/clover.png" class="mobile-hidden" alt="clover splash">
-                    <img src="./images/clover-mobile.png" class="mobile-visible" alt="clover mobile splash">
-                    <div class="focus-column">
-                        <h2>Highlights:</h2>
-                        <ul>
-                            <li>Contributed to the styling and writing CSS for various projects including the provider directory search and formulary search.</li>
-                            <li>Redesigned the home visit experience for Nurse Practitioners (NPs), which saved two daily hours and increased revenue by 8x.</li>
-                            <li>Collaborated with an external agency and internal teams to deploy the first branded version of the Clover Health <a href="https://web.archive.org/web/20160220081453/https://www.cloverhealth.com/en/" target="_blank">website</a>, leading to higher brand visibility.</li>
-                            <li>Contributed to the product development process by leading and initiating conversations across design, engineering, product management, data science, and medical, leading to better collaboration, communication, and transparency across departments.</li>                            
-                        </ul>
+                    <div class="project">
+                        <h2>Clover Health</h2>
+                        <div class="project-content">
+                            <p>Collaborated and helped across the entire company to create and improve internal processes for product development especially between engineering, design, and product. It was a fun opportunity to learn how to build a startup + team from the ground up!</p>
+                            <img src="./images/clover.png" class="mobile-hidden" alt="clover splash">
+                            <img src="./images/clover-mobile.png" class="mobile-visible" alt="clover mobile splash">
+                            <div class="focus-column">
+                                <h2>Highlights:</h2>
+                                <ul>
+                                    <li>Contributed to the styling and writing CSS for various projects including the provider directory search and formulary search.</li>
+                                    <li>Redesigned the home visit experience for Nurse Practitioners (NPs), which saved two daily hours and increased revenue by 8x.</li>
+                                    <li>Collaborated with an external agency and internal teams to deploy the first branded version of the Clover Health <a href="https://web.archive.org/web/20160220081453/https://www.cloverhealth.com/en/" target="_blank">website</a>, leading to higher brand visibility.</li>
+                                    <li>Contributed to the product development process by leading and initiating conversations across design, engineering, product management, data science, and medical, leading to better collaboration, communication, and transparency across departments.</li>                            
+                                </ul>
+                            </div>
+                            <div class="keyword-container">
+                                <p class="keyword">Startup</p>
+                                <p class="keyword">Seed</p>
+                                <p class="keyword">Series A</p>
+                                <p class="keyword">Healthcare</p>
+                                <p class="keyword">IPO</p>
+                                <p class="keyword">Prototyping</p>
+                                <p class="keyword">CSS</p>
+                                <p class="keyword">Design System</p>
+                                <p class="keyword">Web</p>
+                                <p class="keyword">Mobile</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -254,75 +268,85 @@
             <div class="section-content">
                 <h1>Side projects</h1>
                 <p>An assortment of projects I work on for fun! It usually includes AI engineering, game development, and pixel art.</p>
-                <div class="project">
-                    <h2>Rat with wings</h2>
-                    <div class="keyword-container">
-                        <p class="keyword">Unity</p>
-                        <p class="keyword">Game Development</p>
-                        <p class="keyword">Figma</p>
-                        <p class="keyword">Engineering</p>
-                        <p class="keyword">Scripting</p>
-                        <p class="keyword">C#</p>
-                        <p class="keyword">Game Engine</p>
-                        <p class="keyword">Web</p>
+                <div class="project-container">
+                    <div class="project">
+                        <h2>Rat with wings</h2>
+                        <div class="project-content">
+                            <p>I made a Flappy Bird clone to familiarize myself with a game engine. Built in Unity with C# scripting.</p>
+                            <img src="/images/unity.png" class="mobile-hidden" alt="unity splash">
+                            <img src="./images/unity-mobile.png" class="mobile-visible" alt="unity mobile splash">
+                            <div class="keyword-container">
+                                <p class="keyword">Unity</p>
+                                <p class="keyword">Game Development</p>
+                                <p class="keyword">Figma</p>
+                                <p class="keyword">Engineering</p>
+                                <p class="keyword">Scripting</p>
+                                <p class="keyword">C#</p>
+                                <p class="keyword">Game Engine</p>
+                                <p class="keyword">Web</p>
+                            </div>
+                            <div class="button-group">
+                                <button class="button" onclick="window.open('https://github.com/whoischrislam/unity-game-rat-with-wings', '_blank')"><i class="fa fa-github"></i> View GitHub repo</button>
+                                <button class="button" onclick="window.open('https://rat-with-wings.netlify.app/', '_blank')"><i class="fa fa-play"></i> Play</button>
+                            </div>
+                        </div>
                     </div>
-                    <p>I made a Flappy Bird clone to familiarize myself with a game engine. Built in Unity with C# scripting.</p>
-                    <img src="/images/unity.png" class="mobile-hidden" alt="unity splash">
-                    <img src="./images/unity-mobile.png" class="mobile-visible" alt="unity mobile splash">
-                    <div class="button-group">
-                        <button class="button" onclick="window.open('https://github.com/whoischrislam/unity-game-rat-with-wings', '_blank')">View GitHub repo</button>
-                        <button class="button" onclick="window.open('https://rat-with-wings.netlify.app/', '_blank')">Play</button>
+                    <div class="project">
+                        <h2>Translator: AI Polyglot</h2>
+                        <div class="project-content">
+                            <p>I built an AI-powered language translation app. Built in JavaScript and the OpenAI API.</p>
+                            <img src="/images/openai.png" class="mobile-hidden" alt="ai polyglot splash">
+                            <img src="./images/openai-mobile.png" class="mobile-visible" alt="ai polyglot mobile splash">
+                            <div class="keyword-container">
+                                <p class="keyword">AI</p>
+                                <p class="keyword">OpenAI</p>
+                                <p class="keyword">Engineering</p>
+                                <p class="keyword">HTML</p>
+                                <p class="keyword">CSS</p>
+                                <p class="keyword">JavaScript</p>
+                                <p class="keyword">API</p>
+                                <p class="keyword">Web</p>
+                                <p class="keyword">Figma</p>
+                            </div>
+                            <div class="button-group">
+                                <button class="button" onclick="window.open('https://github.com/whoischrislam/ai-polyglot', '_blank')"><i class="fa fa-github"></i> View GitHub repo</button>  
+                                <button class="button" onclick="window.open('https://ai-polyglot.netlify.app/', '_blank')"><i class="fa fa-eye"></i> View app</button>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="project">
+                        <h2>Zodiacus board game</h2>
+                        <div class="project-content">
+                            <p>I'm an avid board gamer who always wanted to make my own game. Zodiacus is currently in the alpha stage with playtesting.</p>
+                            <img src="/images/zodiacus.png" class="mobile-hidden" alt="zodiacus splash">
+                            <img src="./images/zodiacus-mobile.png" class="mobile-visible" alt="zodiacus mobile splash">
+                            <div class="keyword-container">
+                                <p class="keyword">Game Design</p>
+                                <p class="keyword">3D Printing</p>
+                                <p class="keyword">Tabletop</p>
+                                <p class="keyword">Board Game</p>
+                                <p class="keyword">Figma</p>
+                                <p class="keyword">Playtesting</p>
+                            </div>
+                        </div>        
                     </div>
-                </div>
-                <div class="project">
-                    <h2>Translator: AI Polyglot</h2>
-                    <div class="keyword-container">
-                        <p class="keyword">AI</p>
-                        <p class="keyword">OpenAI</p>
-                        <p class="keyword">Engineering</p>
-                        <p class="keyword">HTML</p>
-                        <p class="keyword">CSS</p>
-                        <p class="keyword">JavaScript</p>
-                        <p class="keyword">API</p>
-                        <p class="keyword">Web</p>
-                        <p class="keyword">Figma</p>
+                    <div class="project">
+                        <h2>Project EDR</h2>
+                        <div class="project-content">
+                            <p>I'm developing a Roguelike Action Adventure Platformer with RPG elements set in a world similar to Earth's natural history.</p>
+                            <img src="./images/edr.png" alt="edr splash">
+                            <div class="keyword-container">
+                                <p class="keyword">Unity</p>
+                                <p class="keyword">Game Development</p>
+                                <p class="keyword">Engineering</p>
+                                <p class="keyword">Scripting</p>
+                                <p class="keyword">C#</p>
+                                <p class="keyword">Game Engine</p>
+                                <p class="keyword">Figma</p>
+                            </div>
+                        </div>
                     </div>
-                    <p>I built an AI-powered language translation app. Built in JavaScript and the OpenAI API.</p>
-                    <img src="/images/openai.png" class="mobile-hidden" alt="ai polyglot splash">
-                    <img src="./images/openai-mobile.png" class="mobile-visible" alt="ai polyglot mobile splash">
-                    <div class="button-group">
-                        <button class="button" onclick="window.open('https://github.com/whoischrislam/ai-polyglot', '_blank')">View GitHub repo</button>  
-                        <button class="button" onclick="window.open('https://ai-polyglot.netlify.app/', '_blank')">View app</button>
-                    </div>
-                </div>                    
-                <div class="project">
-                    <h2>Zodiacus board game</h2>
-                    <div class="keyword-container">
-                        <p class="keyword">Game Design</p>
-                        <p class="keyword">3D Printing</p>
-                        <p class="keyword">Tabletop</p>
-                        <p class="keyword">Board Game</p>
-                        <p class="keyword">Figma</p>
-                        <p class="keyword">Playtesting</p>
-                    </div>
-                    <p>I'm an avid board gamer who always wanted to make my own game. Zodiacus is currently in the alpha stage with playtesting.</p>
-                    <img src="/images/zodiacus.png" class="mobile-hidden" alt="zodiacus splash">
-                    <img src="./images/zodiacus-mobile.png" class="mobile-visible" alt="zodiacus mobile splash">
-                </div>
-                <div class="project">
-                    <h2>Project EDR</h2>
-                    <div class="keyword-container">
-                        <p class="keyword">Unity</p>
-                        <p class="keyword">Game Development</p>
-                        <p class="keyword">Engineering</p>
-                        <p class="keyword">Scripting</p>
-                        <p class="keyword">C#</p>
-                        <p class="keyword">Game Engine</p>
-                        <p class="keyword">Figma</p>
-                    </div>
-                    <p>I'm developing a Roguelike Action Adventure Platformer with RPG elements set in a world similar to Earth's natural history.</p>
-                    <img src="./images/edr.png" alt="edr splash">
-                </div>
+                </div>    
             </div>
         </section>
 
