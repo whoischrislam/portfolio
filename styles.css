@@ -29,7 +29,7 @@
 --black:#2D2D2D;
 --gray: #f2f2f2;
 /* Drop Shadow */
---drop-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+--drop-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 /* Button variables */
 --btn-font-size: 1.1em;
 --btn-border-radius: 0.4em;
@@ -145,6 +145,14 @@ button {
     filter: drop-shadow(var(--drop-shadow));
 }
 
+button:hover {
+    background-color: var(--secondary);
+}
+
+button:focus {
+    background-color: var(--secondary);
+}
+
 .keyword-container {
     display: flex;
     gap: var(--gap);
@@ -163,6 +171,12 @@ button {
     margin: 0;
     color:#7e7e7e;
     font-size: var(--keyword-size);
+}
+
+.keyword:hover {
+    background-color: var(--secondary-background);
+    color: var(--black);
+    cursor: default;
 }
 
 /* Header styling */
