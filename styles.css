@@ -10,7 +10,7 @@
 --container-padding: 1em;
 --project-margins: 0 0 0 0;
 /* Typography */
---header-font: 'Red Hat Display', sans-serif;
+--header-font: 'Merriweather', serif;
 --body-font: 'Sarabun', sans-serif;
 --h1-size: 4em;
 --h2-size: 2em;
@@ -122,7 +122,7 @@ img {
 /* Button group */
 .button-group {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: var(--gap);
     margin: var(--inline-spacing);
 }
@@ -169,8 +169,9 @@ button:focus {
     padding: 0 0.8em 0.2em 0.8em;
     background-color: var(--gray);
     margin: 0;
-    color:#7e7e7e;
+    color:var(--black);
     font-size: var(--keyword-size);
+    font-weight: 100;
 }
 
 .keyword:hover {
@@ -319,6 +320,10 @@ section:nth-child(even), header, footer {
     background-color: var(--gray);
 }
 
+.project > .project-content > p {
+    font-size: 1em;
+}
+
 /* HIGHLIGHTS NEED WORK */
 /* Fixes for highlights list styling */
 .project li {
@@ -333,8 +338,7 @@ section:nth-child(even), header, footer {
     border: none;
 }
 .project > .project-content > .focus-column h2 {
-    font-size: em;
-    text-transform: uppercase;
+    font-size: 1em;
 }
 
 .project > .focus-column:last-child {
