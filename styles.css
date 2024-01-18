@@ -1,7 +1,7 @@
 /* CSS Variables */
 :root {
 /* Sizing */
---page-width: 60vw;
+--page-width: 80vw;
 --page-height: 100%;
 /* Spacing */
 --gap: 0.4em 0.4em;
@@ -234,7 +234,7 @@ section {
     display: flex;
 }
 #introduction > .section-content > div > p {
-    width: 50%;
+    width: 46%;
 }
 
 #introduction > .section-content > div > p:first-child {
@@ -301,7 +301,7 @@ section:nth-child(even), header, footer {
     border: var(--border);
     background-color: #ffffff;
     color: var(--black);
-    width: 48%;
+    width: 46%;
     border-radius: var(--border-radius);
     margin: var(--project-margins);
     filter: drop-shadow(var(--drop-shadow));
@@ -319,9 +319,6 @@ section:nth-child(even), header, footer {
     background-color: var(--gray);
 }
 
-.project-content > p {
-    font-size: var(--highlight-size);
-}
 /* HIGHLIGHTS NEED WORK */
 /* Fixes for highlights list styling */
 .project li {
@@ -356,7 +353,7 @@ section:nth-child(even), header, footer {
 }
 
 /* Animations */
-#loading {
+/* #loading {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -388,7 +385,7 @@ section:nth-child(even), header, footer {
 
 #skills, #tldr, #featured-work, #other-work, #side-projects {
     animation-delay: 3.4s;
-}
+} */
 
 /* Types of animations */
 @keyframes moveright {
@@ -505,7 +502,7 @@ section:nth-child(even), header, footer {
     }
 
     .project {
-        width: 100%;
+        width: 100vw;
     }
 
     .mobile-visible {
@@ -514,5 +511,15 @@ section:nth-child(even), header, footer {
 
     .mobile-hidden {
         display: none !important;
+    }
+}
+
+/* For Desktop */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    #header-content, #footer-content, .section-content {
+        --page-width: 90vw;
+    }
+    .project {
+        width: 46%;
     }
 }
