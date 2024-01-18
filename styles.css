@@ -357,7 +357,7 @@ section:nth-child(even), header, footer {
 }
 
 /* Animations */
-#loading {
+/* #loading {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -389,7 +389,7 @@ section:nth-child(even), header, footer {
 
 #skills, #tldr, #featured-work, #other-work, #side-projects {
     animation-delay: 3.4s;
-}
+} */
 
 /* Types of animations */
 @keyframes moveright {
