@@ -386,16 +386,8 @@ section:nth-child(even), header, footer {
     animation-delay: 3.2s;
 }
 
-#animation-companies {
-    animation-delay: 3.4s;
-}
-
-#animation-intro-p3 {
-    animation-delay: 3.6s;
-}
-
 #skills, #tldr, #featured-work, #other-work, #side-projects {
-    animation-delay: 3.8s;
+    animation-delay: 3.4s;
 }
 
 /* Types of animations */
